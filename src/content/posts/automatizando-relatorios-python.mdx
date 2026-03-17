@@ -1,0 +1,60 @@
+---
+title: "Automatizando relatórios chatos com Python e openpyxl"
+description: "Como eliminei 2 horas de trabalho manual por semana com menos de 100 linhas de Python."
+date: "2024-10-20"
+tags: ["Python", "automação", "openpyxl"]
+---
+
+Todo mês o mesmo ritual: abrir quatro planilhas diferentes, copiar colunas específicas, formatar, somar, ajustar datas, salvar como PDF, enviar por e-mail.
+
+2 horas de trabalho. Todo mês. Sem falhar.
+
+Até eu automatizar isso com Python em uma tarde.
+
+## O problema
+
+Tínhamos quatro planilhas Excel com dados de contratos diferentes. Precisávamos:
+
+1. Consolidar os dados em uma tabela única
+2. Calcular totais por categoria
+3. Formatar tudo num padrão específico
+4. Exportar como PDF com o logo da organização
+
+## A solução
+
+Usei duas bibliotecas principais: `openpyxl` para ler e manipular os arquivos Excel, e `ReportLab` para gerar o PDF.
+
+```python
+import openpyxl
+from pathlib import Path
+
+def consolidar_planilhas(pasta: str) -> list[dict]:
+    dados = []
+    for arquivo in Path(pasta).glob("*.xlsx"):
+        wb = openpyxl.load_workbook(arquivo)
+        ws = wb.active
+        for linha in ws.iter_rows(min_row=2, values_only=True):
+            if linha[0]:  # ignora linhas vazias
+                dados.append({
+                    "contrato": linha[0],
+                    "valor": linha[3],
+                    "categoria": linha[5],
+                    "vencimento": linha[7],
+                })
+    return dados
+```
+
+O código completo tem menos de 100 linhas e roda com um duplo clique (empacotei com PyInstaller para que meus colegas pudessem usar sem instalar Python).
+
+## O resultado
+
+- **Antes:** ~2h por mês de trabalho manual
+- **Depois:** ~3 segundos de execução + revisão de 5 minutos
+
+O script está disponível no meu [GitHub](https://github.com/seu-usuario/gerador-relatorios) — documentado para que qualquer pessoa consiga adaptar para seu contexto.
+
+## Lição
+
+Programação aplicada ao seu trabalho atual é a forma mais eficiente de praticar. Você resolve um problema real, tem motivação para terminar, e no final tem um projeto para mostrar que **funciona em produção**.
+
+Não subestime isso ao montar seu portfólio.

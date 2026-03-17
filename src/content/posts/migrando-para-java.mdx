@@ -1,0 +1,48 @@
+---
+title: "Por que estou migrando para Java após anos com Python"
+description: "Reflexão honesta sobre a transição de linguagem, o que aprendi e o que ainda estou aprendendo."
+date: "2024-11-15"
+tags: ["Java", "Python", "carreira"]
+---
+
+Passei os últimos anos escrevendo Python para tudo: automações, scripts, web scraping, APIs com Flask, interfaces com PySide. Python é uma linguagem incrível — expressiva, rápida de escrever, com um ecossistema enorme.
+
+Então por que estou migrando para Java?
+
+## A decisão foi pragmática
+
+Não foi porque acho Java "melhor" que Python. Foi porque, olhando as vagas de backend disponíveis para junior no Brasil, **Java e Spring Boot aparecem em volume muito maior** do que Python/Django ou Python/FastAPI.
+
+Essa é a realidade do mercado brasileiro agora, especialmente em empresas de médio e grande porte.
+
+## O que me surpreendeu positivamente
+
+**1. O ecossistema Spring é impressionante.** Spring Boot, Spring Security, Spring Data JPA — tudo se encaixa de um jeito que faz sentido. Você declara o que quer e o framework resolve a maioria das questões.
+
+**2. Java moderno não é o Java de 2010.** Lambdas, streams, records, var, switch expressions — a linguagem evoluiu bastante. Estou no Java 21 e a experiência é bem mais agradável do que eu esperava.
+
+**3. Tipagem forte me força a pensar melhor.** Vindo do Python, onde você pode fazer `x = qualquer_coisa`, ter que declarar tipos explicitamente me obriga a modelar melhor o que estou construindo.
+
+## O que ainda é difícil
+
+A verbosidade. Ainda. Mesmo com os avanços do Java moderno, escrever um simples endpoint em Spring Boot requer muito mais código do que um equivalente em Flask.
+
+Mas estou me acostumando. E reconhecendo que parte dessa "verbosidade" é estrutura — que em projetos maiores faz toda a diferença.
+
+## O que estou construindo
+
+Comecei uma API REST de gerenciamento de tarefas. Simples, mas completa:
+
+- Autenticação com Spring Security + JWT
+- CRUD com Spring Data JPA + PostgreSQL
+- Documentação com Swagger
+- Testes com JUnit + Mockito
+- Docker + docker-compose
+
+O repositório está no meu [GitHub](https://github.com/seu-usuario/tasks-api).
+
+---
+
+A transição não é rápida, mas está sendo mais tranquila do que eu imaginava. O raciocínio de programação é o mesmo — o que muda é a sintaxe e as ferramentas.
+
+Se você está em dúvida entre aprender Java ou Python para backend: olha as vagas da sua cidade e decide com base em dados, não em preferência.
