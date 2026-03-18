@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/utilitario-patrimonio/:path*",
+      "destination": "https://patrimonio-util.vercel.app/:path*"
+    }
+  ]
+}
