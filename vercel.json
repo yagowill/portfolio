@@ -1,11 +1,5 @@
 {
-  "redirects": [
-    {
-      "source": "/utilitario-patrimonio",
-      "destination": "/utilitario-patrimonio/",
-      "permanent": false
-    }
-  ],
+  
   "rewrites": [
     {
       "source": "/utilitario-patrimonio/:path*",
