@@ -27,7 +27,11 @@ const projects = [
     description:
       "Este projeto Python é um robô de automação web desenvolvido para interagir com o sistema SispatWeb, otimizando tarefas repetitivas como a incorporação e o recebimento de termos de patrimônio.",
     tags: ["Python", "Playwright", "PySide6", "SQLite"],
+<<<<<<< HEAD
     github: "https://github.com/yagowill/robo-patrimonio",
+=======
+    github: "https://github.com/seu-usuario/monitor-processos",
+>>>>>>> refs/remotes/origin/main
     status: "em uso",
   },
 ];
