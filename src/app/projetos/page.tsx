@@ -30,11 +30,7 @@ const projects = [
     description:
       "Este projeto Python é um robô de automação web desenvolvido para interagir com o sistema SispatWeb, otimizando tarefas repetitivas como a incorporação e o recebimento de termos de patrimônio.",
     tags: ["Python", "Playwright", "PySide6", "SQLite"],
-<<<<<<< HEAD
     github: "https://github.com/yagowill/robo-patrimonio",
-=======
-    github: "https://github.com/seu-usuario/monitor-processos",
->>>>>>> refs/remotes/origin/main
     status: "em uso",
   },
   {
@@ -42,11 +38,7 @@ const projects = [
     description:
       "Bot que acessa o sistema de protocolos administrativos eletrônicos interno da organização e atualização automaticamente a planilha de processos importantes com api do google sheets.",
     tags: ["Python", "selenium", "Google Sheets API"],
-<<<<<<< HEAD
     github: "https://github.com/yagowill/processos-importantes",
-=======
-    github: "https://github.com/seu-usuario/scraper-docs",
->>>>>>> refs/remotes/origin/main
     status: "em uso",
   },
 ];
@@ -60,7 +52,7 @@ export default function ProjetosPage() {
           O que construí
         </h1>
         <p className="text-subtle text-lg max-w-xl">
-          Uma mistura de ferramentas reais usadas no trabalho e projetos de
+          Uma mistura de ferramsentas reais usadas no trabalho e projetos de
           portfólio para backend.
         </p>
       </div>
