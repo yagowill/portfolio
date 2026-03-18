@@ -5,28 +5,29 @@ import BlogCard from "@/components/BlogCard";
 
 const projects = [
   {
-    title: "Gerador de Relatórios",
+    title: "Utilitário Patrimônio",
     description:
-      "Automação que consolida planilhas Excel do setor e gera relatórios formatados em PDF automaticamente, eliminando 2h de trabalho manual por semana.",
-    tags: ["Python", "openpyxl", "ReportLab"],
-    github: "https://github.com/seu-usuario/gerador-relatorios",
+      "Ferramenta web para formatação automática. Desenvolvida para uso interno no setor administrativo, eliminando a necessidade de copiar e formatar dados manualmente.",
+    tags: ["HTML", "CSS", "JavaScript", "Bootstrap 5"],
+    github: "https://github.com/yagowill/utilitario-patrimonio",
+    demo: "https://www.yagowill.com.br/utilitario-patrimonio",
     status: "em produção",
   },
   {
-    title: "API de Tarefas",
+    title: "Pesquisa de Preços - Dados Abertos (Compras Governamentais)",
     description:
-      "API REST completa com autenticação JWT, CRUD de tarefas e usuários, documentação Swagger e deploy em container Docker.",
-    tags: ["Java", "Spring Boot", "PostgreSQL", "Docker"],
-    github: "https://github.com/seu-usuario/tasks-api",
-    demo: "https://tasks-api.railway.app",
-    status: "portfólio",
+      "Ferramenta para agilizar a pesquisa de preços de mercado usando a API de Dados Abertos de Compras do Governo Federal.",
+    tags: ["Python", "Streamlit", "Pandas", "Requests"],
+    github: "https://github.com/yagowill/pesquisa-preco",
+    demo: "https://pesquisa-preco.streamlit.app/",
+    status: "em produção",
   },
   {
-    title: "Monitor de Processos",
+    title: "Robô Patrimônio",
     description:
-      "Dashboard que monitora processos administrativos em andamento, envia alertas por e-mail quando prazos estão próximos.",
-    tags: ["Python", "Flask", "SQLite", "SMTP"],
-    github: "https://github.com/seu-usuario/monitor-processos",
+      "Este projeto Python é um robô de automação web desenvolvido para interagir com o sistema SispatWeb, otimizando tarefas repetitivas como a incorporação e o recebimento de termos de patrimônio.",
+    tags: ["Python", "Playwright", "PySide6", "SQLite"],
+    github: "https://github.com/yagowill/robo-patrimonio",
     status: "em uso",
   },
 ];

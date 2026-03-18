@@ -17,28 +17,28 @@ const projects = [
     status: "em produção",
   },
   {
-    title: "API de Tarefas",
+    title: "Pesquisa de Preços - Dados Abertos (Compras Governamentais)",
     description:
-      "API REST completa com autenticação JWT, CRUD de tarefas e usuários, documentação Swagger e deploy em container Docker.",
-    tags: ["Java", "Spring Boot", "PostgreSQL", "Docker"],
-    github: "https://github.com/seu-usuario/tasks-api",
-    demo: "https://tasks-api.railway.app",
-    status: "portfólio",
+      "Ferramenta para agilizar a pesquisa de preços de mercado usando a API de Dados Abertos de Compras do Governo Federal.",
+    tags: ["Python", "Streamlit", "Pandas", "Requests"],
+    github: "https://github.com/yagowill/pesquisa-preco",
+    demo: "https://pesquisa-preco.streamlit.app/",
+    status: "em produção",
   },
   {
-    title: "Monitor de Processos",
+    title: "Robô Patrimônio",
     description:
-      "Dashboard que monitora processos administrativos em andamento, envia alertas por e-mail quando prazos estão próximos.",
-    tags: ["Python", "Flask", "SQLite", "SMTP"],
-    github: "https://github.com/seu-usuario/monitor-processos",
+      "Este projeto Python é um robô de automação web desenvolvido para interagir com o sistema SispatWeb, otimizando tarefas repetitivas como a incorporação e o recebimento de termos de patrimônio.",
+    tags: ["Python", "Playwright", "PySide6", "SQLite"],
+    github: "https://github.com/yagowill/robo-patrimonio",
     status: "em uso",
   },
   {
-    title: "Scraper de Documentos",
+    title: "Atualização automática de planilha de processos",
     description:
-      "Bot que acessa o portal interno da organização e baixa automaticamente documentos recém-publicados, organizando por categoria e data.",
-    tags: ["Python", "Playwright", "BeautifulSoup"],
-    github: "https://github.com/seu-usuario/scraper-docs",
+      "Bot que acessa o sistema de protocolos administrativos eletrônicos interno da organização e atualização automaticamente a planilha de processos importantes com api do google sheets.",
+    tags: ["Python", "selenium", "Google Sheets API"],
+    github: "https://github.com/yagowill/processos-importantes",
     status: "em uso",
   },
 ];
