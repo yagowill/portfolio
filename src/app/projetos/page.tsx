@@ -8,11 +8,12 @@ export const metadata: Metadata = {
 
 const projects = [
   {
-    title: "Gerador de Relatórios",
+    title: "Utilitário Patrimônio",
     description:
-      "Automação que consolida planilhas Excel do setor e gera relatórios formatados em PDF automaticamente, eliminando 2h de trabalho manual por semana.",
-    tags: ["Python", "openpyxl", "ReportLab"],
-    github: "https://github.com/seu-usuario/gerador-relatorios",
+      "Ferramenta web para formatação automática. Desenvolvida para uso interno no setor administrativo, eliminando a necessidade de copiar e formatar dados manualmente.",
+    tags: ["HTML", "CSS", "JavaScript", "Bootstrap 5"],
+    github: "https://github.com/yagowill/utilitario-patrimonio",
+    demo: "https://www.yagowill.com.br/utilitario-patrimonio",
     status: "em produção",
   },
   {
