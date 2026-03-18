@@ -1,8 +1,15 @@
 {
+  "redirects": [
+    {
+      "source": "/utilitario-patrimonio",
+      "destination": "/utilitario-patrimonio/",
+      "permanent": false
+    }
+  ],
   "rewrites": [
     {
       "source": "/utilitario-patrimonio/:path*",
-      "destination": "https://patrimonio-util.vercel.app/:path*"
+      "destination": "https://patrimonio-ten.vercel.app/:path*"
     }
   ]
 }
