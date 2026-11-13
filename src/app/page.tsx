@@ -14,7 +14,7 @@ const projects = [
     status: "em produção",
   },
   {
-    title: "SCEA - Controle de Entrega de Água",
+    title: "SCEA - Sistema de Controle de Entrega de Água",
     description:
       "Sistema web full-stack desenvolvido para digitalizar protocolos, gerenciar demandas e otimizar a logística de distribuição de água potável.",
     tags: ["PHP", "Laravel", "Vue 3", "Inertia.js", "PostgreSQL"],
