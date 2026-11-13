@@ -29,7 +29,7 @@ const projects = [
       "Aplicação web SPA para otimização de rotinas patrimoniais: realiza leitura e extração de dados de PDFs, mesclagem de tabelas de ativos, validação e geração automática de documentos DOCX e relatórios formatados.",
     tags: ["Vue 3", "TypeScript", "Vite", "Vue Router"],
     github: "https://github.com/yagowill/utilitario-patrimonio",
-    demo: "https://www.yagowill.com.br/utilitario-patrimonio",
+    demo: "https://patrimonio-util.vercel.app/",
     status: "em produção",
   },
   {
