@@ -7,25 +7,32 @@ const projects = [
   {
     title: "Utilitário Patrimônio",
     description:
-      "Ferramenta web para formatação automática. Desenvolvida para uso interno no setor administrativo, eliminando a necessidade de copiar e formatar dados manualmente.",
-    tags: ["HTML", "CSS", "JavaScript", "Bootstrap 5"],
+      "Aplicação web SPA para otimização de rotinas patrimoniais: realiza leitura e extração de dados de PDFs, mesclagem de tabelas de ativos, validação e geração automática de documentos DOCX e relatórios formatados.",
+    tags: ["Vue 3", "TypeScript", "Vite", "Vue Router"],
     github: "https://github.com/yagowill/utilitario-patrimonio",
     demo: "https://www.yagowill.com.br/utilitario-patrimonio",
     status: "em produção",
   },
   {
-    title: "Pesquisa de Preços - Dados Abertos (Compras Governamentais)",
+    title: "SCEA - Controle de Entrega de Água",
     description:
-      "Ferramenta para agilizar a pesquisa de preços de mercado usando a API de Dados Abertos de Compras do Governo Federal.",
-    tags: ["Python", "Streamlit", "Pandas", "Requests"],
-    github: "https://github.com/yagowill/pesquisa-preco",
-    demo: "https://pesquisa-preco.streamlit.app/",
-    status: "em produção",
+      "Sistema web full-stack desenvolvido para digitalizar protocolos, gerenciar demandas e otimizar a logística de distribuição de água potável.",
+    tags: ["PHP", "Laravel", "Vue 3", "Inertia.js", "PostgreSQL"],
+    github: "https://github.com/yagowill",
+    status: "em desenvolvimento",
+  },
+  {
+    title: "Gestão de Treinos",
+    description:
+      "Aplicação web responsiva voltada para personal trainers e alunos, permitindo a montagem, organização e acompanhamento de rotinas de treino.",
+    tags: ["Vue 3", "Vuetify", "TypeScript"],
+    github: "https://github.com/yagowill",
+    status: "em desenvolvimento",
   },
   {
     title: "Robô Patrimônio",
     description:
-      "Este projeto Python é um robô de automação web desenvolvido para interagir com o sistema SispatWeb, otimizando tarefas repetitivas como a incorporação e o recebimento de termos de patrimônio.",
+      "Robô de automação web desenvolvido em Python para interagir com o sistema SispatWeb, otimizando tarefas repetitivas como incorporação e recebimento de termos.",
     tags: ["Python", "Playwright", "PySide6", "SQLite"],
     github: "https://github.com/yagowill/robo-patrimonio",
     status: "em uso",
@@ -52,15 +59,15 @@ export default async function Home() {
           </h1>
 
           <p className="font-sans text-xl md:text-2xl text-subtle font-light leading-relaxed mb-4 animate-fade-up-delay-2">
-            Desenvolvedor Backend em transição —<br />
-            <span className="text-text">Java</span> &{" "}
-            <span className="text-text">Spring Boot</span>, automações com{" "}
+            Desenvolvedor Full-Stack em transição —<br />
+            <span className="text-text">Laravel</span> &{" "}
+            <span className="text-text">Vue.js</span>, automações com{" "}
             <span className="text-text">Python</span>, e mais de 4 anos
             construindo coisas que funcionam.
           </p>
 
           <p className="font-mono text-sm text-muted mb-10 animate-fade-up-delay-3">
-            # Ciência da Computação · Backend · Automação · Open to work
+            # Ciência da Computação · Full-Stack · Automação · Open to work
           </p>
 
           <div className="flex flex-wrap gap-4 animate-fade-up-delay-4">
@@ -82,8 +89,8 @@ export default async function Home() {
         {/* Stack pills */}
         <div className="mt-16 flex flex-wrap gap-2 animate-fade-up-delay-5">
           {[
-            "Java", "Spring Boot", "Python", "Node.js",
-            "Docker", "PostgreSQL", "Linux", "Git",
+            "PHP", "Laravel", "Vue 3", "Inertia.js", "Vuetify",
+            "Python", "PostgreSQL", "Docker", "Linux", "Git",
           ].map((tech) => (
             <span key={tech} className="tag">{tech}</span>
           ))}
@@ -102,16 +109,16 @@ export default async function Home() {
           </div>
           <div className="space-y-4 text-subtle leading-relaxed">
             <p>
-              Me formei em Ciência da Computação e desde então venho construindo
-              ferramentas que resolvem problemas reais — principalmente no meu
-              trabalho atual como assistente administrativo, onde automatizo
-              processos e economizo horas de trabalho manual com Python.
+              Sou bacharel em Ciência da Computação e construo ferramentas que
+              resolvem problemas reais — aplicando tecnologia no dia a dia
+              administrativo para digitalizar rotinas e economizar horas de
+              trabalho manual com automações em Python e sistemas web.
             </p>
             <p>
-              Agora estou migrando para o desenvolvimento como carreira principal,
-              com foco em <span className="text-text">backend Java/Spring Boot</span>.
-              Tenho passagem por frontend, IoT (Arduino, ESP32), automação web,
-              scripts Linux e Docker.
+              Atualmente foco no desenvolvimento full-stack com{" "}
+              <span className="text-text">PHP/Laravel e Vue.js (Inertia.js e Vuetify)</span>.
+              Também tenho experiência sólida com bancos relacionais (PostgreSQL, MySQL, SQLite),
+              Java/Spring Boot, automação web, scripts Linux e Docker.
             </p>
             <p>
               Aprendo melhor construindo coisas reais — e é exatamente isso que
@@ -137,7 +144,7 @@ export default async function Home() {
             ver todos →
           </Link>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-2 gap-4">
           {projects.map((project) => (
             <ProjectCard key={project.title} {...project} />
           ))}
