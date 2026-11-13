@@ -3,18 +3,42 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Projetos",
-  description: "Projetos de backend, automações e ferramentas que desenvolvi.",
+  description: "Projetos full-stack, automações e ferramentas web que desenvolvi.",
 };
 
 const projects = [
   {
+    title: "SCEA - Sistema de Controle de Entrega de Água",
+    description:
+      "Sistema web full-stack desenvolvido para digitalizar protocolos, gerenciar demandas e otimizar a logística de distribuição de água potável.",
+    tags: ["PHP", "Laravel", "Vue 3", "Inertia.js", "PostgreSQL"],
+    github: "https://github.com/yagowill",
+    status: "em desenvolvimento",
+  },
+  {
+    title: "Gestão de Treinos",
+    description:
+      "Aplicação web responsiva voltada para personal trainers e alunos, permitindo a montagem, organização e acompanhamento de rotinas de treino.",
+    tags: ["Vue 3", "Vuetify", "TypeScript"],
+    github: "https://github.com/yagowill",
+    status: "em desenvolvimento",
+  },
+  {
     title: "Utilitário Patrimônio",
     description:
-      "Ferramenta web para formatação automática. Desenvolvida para uso interno no setor administrativo, eliminando a necessidade de copiar e formatar dados manualmente.",
-    tags: ["HTML", "CSS", "JavaScript", "Bootstrap 5"],
+      "Aplicação web SPA para otimização de rotinas patrimoniais: realiza leitura e extração de dados de PDFs, mesclagem de tabelas de ativos, validação e geração automática de documentos DOCX e relatórios formatados.",
+    tags: ["Vue 3", "TypeScript", "Vite", "Vue Router"],
     github: "https://github.com/yagowill/utilitario-patrimonio",
     demo: "https://www.yagowill.com.br/utilitario-patrimonio",
     status: "em produção",
+  },
+  {
+    title: "Robô Patrimônio",
+    description:
+      "Robô de automação web desenvolvido em Python para interagir com o sistema SispatWeb, otimizando tarefas repetitivas como a incorporação e o recebimento de termos de patrimônio.",
+    tags: ["Python", "Playwright", "PySide6", "SQLite"],
+    github: "https://github.com/yagowill/robo-patrimonio",
+    status: "em uso",
   },
   {
     title: "Pesquisa de Preços - Dados Abertos (Compras Governamentais)",
@@ -26,18 +50,10 @@ const projects = [
     status: "em produção",
   },
   {
-    title: "Robô Patrimônio",
-    description:
-      "Este projeto Python é um robô de automação web desenvolvido para interagir com o sistema SispatWeb, otimizando tarefas repetitivas como a incorporação e o recebimento de termos de patrimônio.",
-    tags: ["Python", "Playwright", "PySide6", "SQLite"],
-    github: "https://github.com/yagowill/robo-patrimonio",
-    status: "em uso",
-  },
-  {
     title: "Atualização automática de planilha de processos",
     description:
-      "Bot que acessa o sistema de protocolos administrativos eletrônicos interno da organização e atualização automaticamente a planilha de processos importantes com api do google sheets.",
-    tags: ["Python", "selenium", "Google Sheets API"],
+      "Bot que acessa o sistema de protocolos administrativos eletrônicos interno e atualiza automaticamente a planilha de processos importantes via Google Sheets API.",
+    tags: ["Python", "Selenium", "Google Sheets API"],
     github: "https://github.com/yagowill/processos-importantes",
     status: "em uso",
   },
@@ -52,8 +68,8 @@ export default function ProjetosPage() {
           O que construí
         </h1>
         <p className="text-subtle text-lg max-w-xl">
-          Uma mistura de ferramsentas reais usadas no trabalho e projetos de
-          portfólio para backend.
+          Uma mistura de ferramentas reais usadas no dia a dia e projetos
+          full-stack desenvolvidos com Laravel, Vue e Python.
         </p>
       </div>
 
